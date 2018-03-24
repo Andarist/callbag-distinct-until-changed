@@ -16,7 +16,7 @@ pipe(
   fromIterable([1, 1, 2, 2, 3, 3, 4, 4]),
   distinctUntilChanged(),
   forEach(value => {
-    // will 1 2 3 4
+    // will log 1 2 3 4
     console.log(value)
   }),
 )
