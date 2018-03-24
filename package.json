@@ -1,0 +1,52 @@
+{
+  "name": "callbag-distinct-until-changed",
+  "version": "0.0.0",
+  "description": "👜 Callbag operator that drops consecutive duplicate values",
+  "main": "dist/callbag-distinct-until-changed.js",
+  "module": "dist/callbag-distinct-until-changed.es.js",
+  "files": ["dist"],
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "jest",
+    "precommit": "lint-staged",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "prepare": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/callbag-distinct-until-changed.git"
+  },
+  "keywords": [
+    "callbag",
+    "callbags",
+    "drop",
+    "distinct"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/callbag-distinct-until-changed/issues"
+  },
+  "homepage": "https://github.com/Andarist/callbag-distinct-until-changed#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "callbag-flatten": "^1.0.0",
+    "callbag-for-each": "^1.0.1",
+    "callbag-from-iter": "^1.0.0",
+    "callbag-interval": "^1.0.0",
+    "callbag-map": "^1.0.1",
+    "callbag-pipe": "^1.1.1",
+    "callbag-take": "^1.0.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^4.0.0-beta.3"
+  }
+}
