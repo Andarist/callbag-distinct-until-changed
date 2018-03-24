@@ -1,10 +1,12 @@
 {
   "name": "callbag-distinct-until-changed",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "👜 Callbag operator that drops consecutive duplicate values",
   "main": "dist/callbag-distinct-until-changed.js",
   "module": "dist/callbag-distinct-until-changed.es.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "pretest": "npm run build",
     "test": "jest",
