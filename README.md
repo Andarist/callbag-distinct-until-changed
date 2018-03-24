@@ -21,3 +21,7 @@ pipe(
   }),
 )
 ```
+
+## Alternatives
+
+* https://github.com/franciscotln/callbag-drop-repeats
